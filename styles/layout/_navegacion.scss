@@ -61,9 +61,7 @@ nav {
 	transform: rotate(45deg) translate(-10px, -8px);
 }
 @media (max-width:768px) {
-	body {
-		overflow: hidden;
-	}
+	
 	.ham {
 		display: block;
 		cursor: pointer;
@@ -80,7 +78,7 @@ nav {
         display: flex;
         flex-direction: column;
 		align-items: center;
-		height: 45vh;
+		min-height: 45vh;
 		display: none;
 		opacity: 0;
 		transition: opacity 5s ease-out;
@@ -88,7 +86,7 @@ nav {
 		li {
 			text-align: center;
 			width: 100%;
-			padding: 5rem;
+			padding-top: 5rem;
 		}
 	}
 }

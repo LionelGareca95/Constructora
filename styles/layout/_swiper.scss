@@ -1,0 +1,52 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+    
+  }
+  .container {
+    min-height: 70vh;
+    padding: 1rem 4rem;
+    width: 100%;
+    padding: 0;
+  }
+  .swiper-button-prev {
+    color: $naranja !important;
+    opacity: .9;
+  }
+  .swiper-button-next {
+    color: $naranja !important;
+    opacity: .9;
+  }
+  .swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 1.5rem;
+    box-shadow: 1px 4px 4px 1px rgba(196, 196, 196, 0.40);
+    margin-bottom: 1rem;
+    
+  }
+  
+  
+  .swiper-slide img {
+    
+    display: block;
+    width: 100%;
+    height: 45rem;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+  .servicios {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .parrafo-swiper {
+    text-align: center;
+    color: $negro;
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 3rem;
+   
+  }
+  

@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="styles/app.css">
     <link rel="shortcut icon" href="/img/faviconn.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/68dc237817.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <title>A85 Constructora</title>
 </head>
-<body>
+<body class="contenedor_index">
     <header>
         <nav>
-            <a href="#"><img src="/img/logo.svg" class="logo" alt="Logo constructora" loading="lazy"></a>
+            <a href="index.html"><img src="/img/logo.svg" class="logo" alt="Logo constructora" loading="lazy"></a>
 
             <ul class="enlaces-menu">
-                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="services.html">Servicios</a></li>
                 <li><a href="#">Proyectos</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
@@ -27,6 +28,80 @@
             </button>                       
         </nav>
     </header>
+    <main>
+        <div class="background-image"></div>
+    </main>
+
+    <section class="contenedor-servicios">
+            
+            <img class="imagen-servicio" src="/img/inicio/imagen2.jpg" alt="Img" loading="lazy">
+            
+            <div class="servicios">
+                <h1>SERVICIOS</h1>
+                <li>Construcciones</li>
+                <li>Alquiler de Maquinarias</li>
+
+               <a href="services.html">Mas informacion</a>
+            </div>
+
+    </section>
+
+    <div class="servicio_calidad">
+        <h2><i class="fa-solid fa-house"></i> Amplia Experiencia</h2>
+        <h2><i class="fa-solid fa-helmet-safety"></i>Equipo Profesional</h2>
+    </div>
+
+    <section class="nosotros">
+        <div class="nosotros_texto">   
+            <h2>NOSOTROS</h2>
+            <img src="/img/logo.svg" alt="Logo" loading="lazy">
+            <p>
+                Somos una empresa constructora a cargo de diferentes proyectos, desde edificios, apartamentos, casas hasta grandes estructuras, para el sector comercial, público y privado.            
+                Reunimos una gran variedad de recursos para encargarnos del proceso de edificación, desde la concepción de la idea hasta el final de su vida útil, por lo tanto, nuestro equipo lo conforma un gran número de profesionales, áreas, equipo y maquinaria con altos estándares de calidad.
+            </p>
+        </div>
+        <div>
+            <img class="imagen_nosotros" src="/img/inicio/imagen3.png" alt="Img" loading="lazy">
+        </div>
+    </section>
+
+    <div class="proyectos">
+        <h2>Proyectos Recientes</h2>
+    </div>
+
+    <a class="wtp">
+        <img src="img/whatsapp.svg" href="https://api.whatsapp.com/send?phone=3417183283" alt="Wtp" loading="lazy">
+    </a>
+     <!-- Swiper -->
+     <div class="container">
+     <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/projects/Apartamentos/proyecto3.jpg" alt="Img" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/projects/casas/proyecto2.jpg" alt="Img" loading="lazy">
+            
+          </div>
+          <div class="swiper-slide">
+            <img src="img/projects/Apartamentos/1a4eaa_68b6fc4196bf478d9a37c3f297a82c6b_mv2.jpg" alt="cuchillo" loading="lazy"> 
+          </div>
+          <div class="swiper-slide">
+            <img src="img/projects/casas/proyecto4.jpg" alt="imagen cuchillo" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/projects/edificios/proyecto1.jpg" alt="imagen cuchillo" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/projects/Apartamentos/1a4eaa_0b4f15d3665040f9b6b45b183c95477e_mv2.jpg" alt="imagen cuchillo" loading="lazy">
+          </div>
+      </div> 
+      <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
     <script src="/js/menu.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/js/swiper.js"></script>
 </body>
 </html>

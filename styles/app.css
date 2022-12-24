@@ -324,6 +324,7 @@ body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
   background-color: rgb(233, 123, 48);
+  height: 100%;
 }
 
 img {
@@ -410,9 +411,6 @@ nav {
 }
 
 @media (max-width: 768px) {
-  body {
-    overflow: hidden;
-  }
   .ham {
     display: block;
     cursor: pointer;
@@ -428,7 +426,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 45vh;
+    min-height: 45vh;
     display: none;
     opacity: 0;
     transition: opacity 5s ease-out;
@@ -437,6 +435,265 @@ nav {
   .enlaces-menu li {
     text-align: center;
     width: 100%;
-    padding: 5rem;
+    padding-top: 5rem;
   }
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  min-height: 70vh;
+  padding: 1rem 4rem;
+  width: 100%;
+  padding: 0;
+}
+
+.swiper-button-prev {
+  color: rgb(233, 123, 48) !important;
+  opacity: 0.9;
+}
+
+.swiper-button-next {
+  color: rgb(233, 123, 48) !important;
+  opacity: 0.9;
+}
+
+.swiper-slide {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 1px 4px 4px 1px rgba(196, 196, 196, 0.4);
+  margin-bottom: 1rem;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 45rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+
+.servicios {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.parrafo-swiper {
+  text-align: center;
+  color: black;
+  font-size: 3rem;
+  font-weight: bold;
+  padding-bottom: 3rem;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(233, 123, 48);
+  font-size: 100%;
+}
+
+.nuestrosServicios {
+  height: 34rem;
+  background-color: rgb(38, 39, 39);
+  color: white;
+  border: 0.1rem solid rgba(255, 255, 255, 0.685);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.5rem;
+}
+.nuestrosServicios .TitleP {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.nuestrosServicios .img-services {
+  height: 100%;
+  width: 100%;
+}
+
+#principalNS {
+  background-color: rgb(233, 123, 48);
+  color: rgb(38, 39, 39);
+  font-weight: 700;
+  text-align: center;
+}
+#principalNS #TitleNS {
+  font-size: 3rem;
+}
+
+.nuestrosServiciosWithImg {
+  padding: 0;
+}
+
+.footer {
+  background-color: rgb(38, 39, 39);
+  color: white;
+  margin-top: 4rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10rem;
+  height: 18rem;
+}
+.footer .footer-title {
+  font-size: 4rem;
+}
+.footer .footer-direction {
+  display: flex;
+}
+.footer .footer-direction .footer-icon {
+  font-size: 5rem;
+}
+
+@media (max-width: 992px) {
+  .nuestrosServicios {
+    height: 24rem;
+    align-items: center;
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 768px) {
+  .nuestrosServicios {
+    height: 24rem;
+  }
+  #div-img-interior {
+    height: 34rem;
+  }
+  .footer-abajo {
+    margin-top: 0rem;
+  }
+}
+main .background-image {
+  height: 100vh;
+  background: url(/img/inicio/imagen1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: brightness(0.7);
+}
+
+@media (min-width: 768px) {
+  .contenedor-servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 50vh;
+  }
+}
+.contenedor-servicios {
+  background-color: rgb(38, 39, 39);
+}
+.contenedor-servicios .imagen-servicio {
+  width: 100%;
+  height: 100%;
+}
+.contenedor-servicios .servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}
+.contenedor-servicios .servicios h1 {
+  font-size: 4rem;
+}
+.contenedor-servicios .servicios li {
+  font-size: 2rem;
+}
+.contenedor-servicios .servicios a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(38, 39, 39);
+  text-decoration: none;
+  height: 5rem;
+  width: 20rem;
+  color: white;
+  border-radius: 0.5rem;
+  font-size: 1.8rem;
+  margin-top: 3rem;
+}
+.contenedor-servicios .servicios a:hover {
+  color: rgb(233, 123, 48);
+}
+
+@media (min-width: 768px) {
+  .servicio_calidad {
+    display: flex;
+    justify-content: center;
+  }
+  .nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.servicio_calidad {
+  padding: 2rem;
+  gap: 2rem;
+  color: white;
+  font-size: 1.5rem;
+  background-color: rgb(38, 39, 39);
+}
+.servicio_calidad h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.servicio_calidad .fa-solid {
+  color: rgb(233, 123, 48);
+  padding: 1rem;
+}
+
+.nosotros .imagen_nosotros {
+  width: 100%;
+  height: 100%;
+}
+.nosotros .nosotros_texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.nosotros .nosotros_texto h2 {
+  font-size: 3rem;
+}
+.nosotros .nosotros_texto p {
+  text-align: justify;
+  font-size: 1.7rem;
+  line-height: 3rem;
+  padding: 1rem 3rem;
+}
+
+.proyectos {
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/*Logo Whatsapp*/
+.wtp {
+  position: fixed;
+  width: 6rem;
+  top: 92%;
+  left: 1%;
+  z-index: 100;
+}
+.wtp:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }/*# sourceMappingURL=app.css.map */

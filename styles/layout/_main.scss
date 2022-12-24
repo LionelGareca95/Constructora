@@ -1,0 +1,134 @@
+main {
+
+    .background-image {
+        height: 100vh;
+        background: url(/img/inicio/imagen1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        filter: brightness(0.7)
+    }
+}
+@include tablet {
+    .contenedor-servicios {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+         min-height: 50vh;
+    }
+}
+.contenedor-servicios {
+        background-color: rgb(38, 39, 39);
+
+       .imagen-servicio {
+                width: 100%;
+                height: 100%;
+       }
+        .servicios {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 50vh;
+            width: 100%;
+            background-color: white;
+            text-align: center;
+            h1 {
+                font-size: 4rem;
+            }
+            li {
+                font-size: 2rem;
+            }
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgb(38, 39, 39);
+                text-decoration: none;
+                height: 5rem;
+                width: 20rem;
+                color: $blanco;
+                border-radius: .5rem;
+                font-size: 1.8rem;
+                margin-top: 3rem;
+                &:hover {
+                    color: $naranja;
+                }
+            }
+        }
+    }
+
+    @include tablet {
+        .servicio_calidad {
+            display: flex;
+            justify-content: center;
+        }
+        .nosotros {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .servicio_calidad {
+        padding: 2rem;
+        gap: 2rem;
+        color: $blanco;
+        
+        h2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        font-size: 1.5rem;
+        background-color: $gris;
+        .fa-solid {
+            color: $naranja;
+            padding: 1rem;
+        }
+    }
+
+    .nosotros {
+        
+        .imagen_nosotros {
+            width: 100%;
+            height: 100%;
+        }
+        .nosotros_texto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $blanco;
+
+            h2 {
+                font-size: 3rem;
+            }
+
+            p {
+                text-align: justify;
+                font-size: 1.7rem;
+                line-height: 3rem;
+                padding: 1rem 3rem;
+            }
+        }
+    }
+
+    .proyectos {
+        color: $blanco;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*Logo Whatsapp*/
+
+    .wtp{
+        position: fixed;
+        width: 6rem;
+        top: 92%;
+        left: 1%;
+        z-index: 100;
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
