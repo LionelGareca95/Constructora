@@ -1,107 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/app.css">
-    <link rel="shortcut icon" href="/img/faviconn.png" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/68dc237817.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="./img/faviconn.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/68dc237817.js"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <title>A85 Constructora</title>
-</head>
-<body class="contenedor_index">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  </head>
+  <body class="contenedor_index">
     <header>
-        <nav>
-            <a href="index.html"><img src="/img/logo.svg" class="logo" alt="Logo constructora" loading="lazy"></a>
+      <nav>
+        <a href="index.html"><img src="./img/logo.svg" class="logo" alt="Logo
+            constructora" loading="lazy"></a>
 
-            <ul class="enlaces-menu">
-                <li><a href="services.html">Servicios</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
+        <ul class="enlaces-menu">
+          <li class="li-enlaces"><a href="services.html">Servicios</a></li>
+          <li class="li-enlaces"><a href="proyectos.html">Proyectos</a></li>
+          <li class="li-enlaces" id="contacto-menu"><a href="#footer">Contacto</a></li>
+        </ul>
 
-            <button class="ham" type="button">   
-                <span class="br-1"></span>
-                <span class="br-2"></span>
-                <span class="br-3"></span>
-            </button>                       
-        </nav>
+        <button class="ham" type="button">
+          <span class="br-1"></span>
+          <span class="br-2"></span>
+          <span class="br-3"></span>
+        </button>
+      </nav>
     </header>
     <main>
-        <div class="background-image"></div>
+      <div class="background-image"></div>
     </main>
 
-    <section class="contenedor-servicios">
-            
-            <img class="imagen-servicio" src="/img/inicio/imagen2.jpg" alt="Img" loading="lazy">
-            
-            <div class="servicios">
-                <h1>SERVICIOS</h1>
-                <li>Construcciones</li>
-                <li>Alquiler de Maquinarias</li>
+    <div class="background-section-gris">
+      <div class="container">
+        <section class="contenedor-servicios">
 
-               <a href="services.html">Mas informacion</a>
-            </div>
+          <img class="imagen-servicio" src="./img/inicio/imagen2.jpg" alt="Img"
+            loading="lazy">
 
-    </section>
+          <div class="servicios">
+            <h1>SERVICIOS</h1>
+            <li>Construcciones</li>
+            <li>Alquiler de Maquinarias</li>
 
-    <div class="servicio_calidad">
-        <h2><i class="fa-solid fa-house"></i> Amplia Experiencia</h2>
-        <h2><i class="fa-solid fa-helmet-safety"></i>Equipo Profesional</h2>
-    </div>
+            <a href="services.html">Mas informacion</a>
+          </div>
 
-    <section class="nosotros">
-        <div class="nosotros_texto">   
-            <h2>NOSOTROS</h2>
-            <img src="/img/logo.svg" alt="Logo" loading="lazy">
-            <p>
-                Somos una empresa constructora a cargo de diferentes proyectos, desde edificios, apartamentos, casas hasta grandes estructuras, para el sector comercial, público y privado.            
-                Reunimos una gran variedad de recursos para encargarnos del proceso de edificación, desde la concepción de la idea hasta el final de su vida útil, por lo tanto, nuestro equipo lo conforma un gran número de profesionales, áreas, equipo y maquinaria con altos estándares de calidad.
-            </p>
-        </div>
-        <div>
-            <img class="imagen_nosotros" src="/img/inicio/imagen3.png" alt="Img" loading="lazy">
-        </div>
-    </section>
 
-    <div class="proyectos">
-        <h2>Proyectos Recientes</h2>
-    </div>
 
-    <a class="wtp">
-        <img src="img/whatsapp.svg" href="https://api.whatsapp.com/send?phone=3417183283" alt="Wtp" loading="lazy">
-    </a>
-     <!-- Swiper -->
-     <div class="container">
-     <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="img/projects/Apartamentos/proyecto3.jpg" alt="Img" loading="lazy">
-          </div>
-          <div class="swiper-slide">
-            <img src="img/projects/casas/proyecto2.jpg" alt="Img" loading="lazy">
-            
-          </div>
-          <div class="swiper-slide">
-            <img src="img/projects/Apartamentos/1a4eaa_68b6fc4196bf478d9a37c3f297a82c6b_mv2.jpg" alt="cuchillo" loading="lazy"> 
-          </div>
-          <div class="swiper-slide">
-            <img src="img/projects/casas/proyecto4.jpg" alt="imagen cuchillo" loading="lazy">
-          </div>
-          <div class="swiper-slide">
-            <img src="img/projects/edificios/proyecto1.jpg" alt="imagen cuchillo" loading="lazy">
-          </div>
-          <div class="swiper-slide">
-            <img src="img/projects/Apartamentos/1a4eaa_0b4f15d3665040f9b6b45b183c95477e_mv2.jpg" alt="imagen cuchillo" loading="lazy">
-          </div>
-      </div> 
-      <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        </section>
       </div>
     </div>
+
+    <div class="background-section-naranja">
+      <div class="container">
+        <div class="servicio_calidad">
+          <h2><i class="fa-solid fa-house"></i> Amplia Experiencia</h2>
+          <h2><i class="fa-solid fa-helmet-safety"></i>Equipo Profesional</h2>
+        </div>
+      </div>
+    </div>
+    <div class="background-section-gris">
+      <div class="container">
+        <section class="nosotros">
+          <div class="nosotros_texto">
+            <h2>NOSOTROS</h2>
+            <img src="./img/logo.svg" alt="Logo" loading="lazy">
+            <p>
+              Somos una empresa constructora a cargo de diferentes proyectos,
+              desde
+              edificios, apartamentos, casas hasta grandes estructuras, para el
+              sector comercial, público y privado.
+              Reunimos una gran variedad de recursos para encargarnos del
+              proceso
+              de
+              edificación, desde la concepción de la idea hasta el final de su
+              vida
+              útil, por lo tanto, nuestro equipo lo conforma un gran número de
+              profesionales, áreas, equipo y maquinaria con altos estándares de
+              calidad.
+            </p>
+          </div>
+          <div>
+            <img class="imagen_nosotros" src="./img/inicio/imagen3.png"
+              alt="Img"
+              loading="lazy">
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="background-section-naranja">
+      <div class="container">
+        <div class="proyectos">
+          <h2 class="proyecto-title">PROYECTOS RECIENTES </h2>
+        </div>
+      </div>
+    </div>
+    <a class="wtp">
+      <img src="img/whatsapp.svg"
+        href="https://api.whatsapp.com/send?phone=3417183283" alt="Wtp"
+        loading="lazy">
+    </a>
+    <div class="background-section-gris">
+      <div class="container">
+        <div class="container-swiper">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/projects/Apartamentos/proyecto3.jpg" alt="Img"
+                  loading="lazy">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/projects/casas/proyecto2.jpg" alt="Img"
+                  loading="lazy">
+
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./img/projects/Apartamentos/1a4eaa_0b4f15d3665040f9b6b45b183c95477e_mv2.jpg"
+                  alt="cuchillo" loading="lazy">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/projects/casas/proyecto4.jpg" alt="imagen
+                  cuchillo"
+                  loading="lazy">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/projects/edificios/proyecto1.jpg" alt="imagen
+                  cuchillo" loading="lazy">
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="img/projects/Apartamentos/1a4eaa_0b4f15d3665040f9b6b45b183c95477e_mv2.jpg"
+                  alt="imagen cuchillo" loading="lazy">
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Swiper -->
+
+
+
+    <footer id="footer">
+      <div class="row">
+        <div class="col-12 col-md-5 footer">
+          <h1 class="footer-title">
+            Contáctanos
+          </h1>
+          <div class="footer-item footer-direction">
+            <i class="bi bi-house-door footer-icon"></i>
+            <div class="footer-d-t">
+              <p class="footer-text">
+                Carrera 16# 15-49 Centro
+                Florencia, Caqueta
+              </p>
+              <p class="footer-text">Colombia</p>
+            </div>
+
+          </div>
+          <div class="footer-item footer-mail">
+            <i class="bi bi-envelope-fill footer-icon"></i>
+            <div class="footer-d-t">
+              <p class="footer-text">
+                ventas@a85constructora.com
+              </p>
+              <p class="footer-text">info@a85constructora.com</p>
+            </div>
+
+          </div>
+          <div class="footer-item footer-phone">
+            <i class="bi bi-phone footer-icon"></i>
+            <div class="footer-d-t">
+              <p class="footer-text footer-text-phone">
+                (+57) 320 900 0256s
+              </p>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-7 footer-abajo">
+          <form
+            action="https://formsubmit.co/carlosjose445566@gmail.com"
+            method="POST"
+            id="form-footer">
+            <div class="row div-form">
+              <div class="col-6 div-inputs">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input class="input-footer" type="text"
+                  id="nombre" name="nombre">
+              </div>
+              <div class="col-6 div-inputs">
+                <label for="apellidos" class="form-label">Apellidos</label>
+                <input class="input-footer" type="text"
+                  id="apellidos" name="apellidos">
+              </div>
+            </div>
+            <div class="row div-form">
+              <div class="col-12 div-inputs div-inputs-email">
+                <label for="email" class="form-label">Email*</label>
+                <input class="input-footer-email" required
+                  type="email"
+                  id="email" name="email">
+              </div>
+            </div>
+            <div class="row div-form">
+              <div class="col-6 div-inputs">
+                <label for="telefono" class="form-label">Telefono</label>
+                <input class="input-footer" type="text"
+                  id="telefono" name="telefono">
+              </div>
+              <div class="col-6 div-inputs">
+                <label for="dirección" class="form-label">Dirección</label>
+                <input class="input-footer" type="text"
+                  id="dirección" name="dirección">
+              </div>
+            </div>
+            <div class="row div-form">
+              <div class="col-12 div-inputs div-inputs-mensaje">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <input class="input-footer-mensaje" type="text"
+                  required
+                  id="mensaje" name="mensaje" value="Hola, me gustaría más información sobre sus servicios">
+              </div>
+            </div>
+            <div class="col-12 div-botonEnviar">
+              <button class="btn btn-dark botonEnviar">Enviar</button>
+            </div>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next"
+              value="http://127.0.0.1:5501/index.html">
+            <input type="hidden" name="_autoresponse"
+              value="your custom message">
+          </form>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Formulario Enviado con exito</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/formFooter.js"></script>
     <script src="/js/menu.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/js/swiper.js"></script>
-</body>
+  </body>
 </html>

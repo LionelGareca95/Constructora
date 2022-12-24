@@ -17,6 +17,12 @@ main {
          min-height: 50vh;
     }
 }
+.background-section-gris{
+    background-color: $gris;
+}
+.background-section-naranja{
+    background-color: $naranja;
+}
 .contenedor-servicios {
         background-color: rgb(38, 39, 39);
 
@@ -93,6 +99,7 @@ main {
             height: 100%;
         }
         .nosotros_texto {
+            padding-top: 1rem;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -118,14 +125,20 @@ main {
         display: flex;
         justify-content: center;
     }
+    .proyecto-title{
+        color: $gris;
+        font-size: 4rem;
+        margin: 3rem;
+        font-weight: $regular;
+    }
 
     /*Logo Whatsapp*/
 
     .wtp{
         position: fixed;
-        width: 6rem;
-        top: 92%;
-        left: 1%;
+        width: 5rem;
+        top: 91%;
+        left: 2rem;
         z-index: 100;
         &:hover {
             cursor: pointer;

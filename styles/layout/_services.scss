@@ -23,7 +23,9 @@
         height: 100%;
         width: 100%;
     }
+   
 }
+
 
 #principalNS{
     background-color: $naranja;
@@ -37,29 +39,7 @@
 .nuestrosServiciosWithImg{
     padding:0;
 }
-.footer{
-    background-color: $gris;
-    color:white;
-    margin-top: 4rem;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10rem;
-    height: 18rem;
-    .footer-title{
-        font-size: 4rem;
-    }
-    & .footer-direction{
-        display: flex;
-        .footer-icon{
-            font-size: 5rem;
-        }
-       
-    }
-    
 
-}
 
 
 @media (max-width: 992px) { 
@@ -75,8 +55,5 @@
     }
     #div-img-interior{
         height: 34rem;
-    }
-    .footer-abajo{
-        margin-top: 0rem;
     }
 }

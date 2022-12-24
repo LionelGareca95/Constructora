@@ -323,7 +323,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
-  background-color: rgb(233, 123, 48);
+  background-color: rgb(233, 123, 49);
   height: 100%;
 }
 
@@ -378,21 +378,22 @@ nav {
   display: flex;
 }
 .enlaces-menu li {
-  padding-left: 3rem;
   list-style-type: none;
   transition: 0.3s;
 }
 .enlaces-menu li a {
+  padding: 2rem;
   text-decoration: none;
   font-size: 1.8rem;
   color: black;
   font-weight: 600;
 }
 .enlaces-menu li a:hover {
-  color: rgb(233, 123, 48);
+  color: rgb(233, 123, 49);
 }
 
 .enlaces-menu.activado {
+  padding: 0;
   display: flex;
   -webkit-animation: muestraMenu 350ms ease-in-out both;
           animation: muestraMenu 350ms ease-in-out both;
@@ -438,25 +439,165 @@ nav {
     padding-top: 5rem;
   }
 }
+.footer {
+  background-color: rgb(233, 123, 49);
+  color: gris;
+  margin-top: 3rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  height: auto;
+}
+.footer .footer-title {
+  font-size: 3.5rem;
+}
+.footer .footer-item {
+  display: flex;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+}
+.footer .footer-item .footer-icon {
+  font-size: 5rem;
+}
+.footer .footer-item .footer-d-t {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer .footer-item .footer-d-t .footer-text {
+  font-size: 1.4rem;
+}
+.footer .footer-item .footer-d-t .footer-text-phone {
+  margin-top: -11px;
+  font-size: 1.6rem;
+}
+
+.footer-abajo {
+  background-color: rgb(233, 123, 49);
+  color: gris;
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+.footer-abajo .div-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-abajo .div-form .div-inputs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer-abajo .div-form .input-footer {
+  width: 20rem;
+  height: 4rem;
+  border: 0;
+  outline: none;
+  font-size: 1.8rem;
+  margin: 1rem 0rem;
+}
+.footer-abajo .div-form .input-footer:hover {
+  background-color: rgb(38, 39, 39);
+  color: white;
+}
+.footer-abajo .div-form .input-footer:focus {
+  background-color: rgb(38, 39, 39);
+  color: white;
+}
+.footer-abajo .div-form .form-label {
+  font-size: 2rem;
+  margin-bottom: -1rem;
+}
+.footer-abajo .div-inputs-email {
+  width: 100%;
+}
+.footer-abajo .div-inputs-email .input-footer-email {
+  height: 4rem;
+  border: 0;
+  outline: none;
+  font-size: 1.8rem;
+  margin: 1rem 0rem;
+}
+.footer-abajo .div-inputs-email .input-footer-email:hover {
+  background-color: rgb(38, 39, 39);
+  color: white;
+}
+.footer-abajo .div-inputs-email .input-footer-email:focus {
+  background-color: rgb(38, 39, 39);
+  color: white;
+}
+.footer-abajo .div-inputs-mensaje .input-footer-mensaje {
+  height: 4rem;
+  border: 0;
+  outline: none;
+  font-size: 1.8rem;
+  margin: 1rem 0rem;
+}
+.footer-abajo .div-inputs-mensaje .input-footer-mensaje:hover {
+  background-color: rgb(38, 39, 39);
+  color: white;
+}
+.footer-abajo .div-inputs-mensaje .input-footer-mensaje:focus {
+  background-color: rgb(38, 39, 39);
+  color: white;
+}
+.footer-abajo .div-botonEnviar .botonEnviar {
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(38, 39, 39);
+  color: rgb(233, 123, 49);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+@media (max-width: 992px) {
+  .footer {
+    align-items: center;
+  }
+  .footer-abajo {
+    margin-top: 2rem;
+    justify-content: flex-start;
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 0;
+  }
+  .footer-abajo {
+    margin-top: 0rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+}
 .swiper {
   width: 100%;
   height: 100%;
+  margin-bottom: 3rem;
 }
 
-.container {
-  min-height: 70vh;
+.container-swiper {
+  min-height: auto;
   padding: 1rem 4rem;
   width: 100%;
   padding: 0;
 }
 
 .swiper-button-prev {
-  color: rgb(233, 123, 48) !important;
+  color: rgb(233, 123, 49) !important;
   opacity: 0.9;
 }
 
 .swiper-button-next {
-  color: rgb(233, 123, 48) !important;
+  color: rgb(233, 123, 49) !important;
   opacity: 0.9;
 }
 
@@ -467,7 +608,6 @@ nav {
   background: #fff;
   border-radius: 1.5rem;
   box-shadow: 1px 4px 4px 1px rgba(196, 196, 196, 0.4);
-  margin-bottom: 1rem;
 }
 
 .swiper-slide img {
@@ -495,7 +635,7 @@ nav {
 .background {
   width: 100%;
   height: 100%;
-  background-color: rgb(233, 123, 48);
+  background-color: rgb(233, 123, 49);
   font-size: 100%;
 }
 
@@ -521,7 +661,7 @@ nav {
 }
 
 #principalNS {
-  background-color: rgb(233, 123, 48);
+  background-color: rgb(233, 123, 49);
   color: rgb(38, 39, 39);
   font-weight: 700;
   text-align: center;
@@ -532,27 +672,6 @@ nav {
 
 .nuestrosServiciosWithImg {
   padding: 0;
-}
-
-.footer {
-  background-color: rgb(38, 39, 39);
-  color: white;
-  margin-top: 4rem;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  padding: 10rem;
-  height: 18rem;
-}
-.footer .footer-title {
-  font-size: 4rem;
-}
-.footer .footer-direction {
-  display: flex;
-}
-.footer .footer-direction .footer-icon {
-  font-size: 5rem;
 }
 
 @media (max-width: 992px) {
@@ -568,9 +687,6 @@ nav {
   }
   #div-img-interior {
     height: 34rem;
-  }
-  .footer-abajo {
-    margin-top: 0rem;
   }
 }
 main .background-image {
@@ -590,6 +706,14 @@ main .background-image {
     min-height: 50vh;
   }
 }
+.background-section-gris {
+  background-color: rgb(38, 39, 39);
+}
+
+.background-section-naranja {
+  background-color: rgb(233, 123, 49);
+}
+
 .contenedor-servicios {
   background-color: rgb(38, 39, 39);
 }
@@ -627,7 +751,7 @@ main .background-image {
   margin-top: 3rem;
 }
 .contenedor-servicios .servicios a:hover {
-  color: rgb(233, 123, 48);
+  color: rgb(233, 123, 49);
 }
 
 @media (min-width: 768px) {
@@ -653,7 +777,7 @@ main .background-image {
   justify-content: center;
 }
 .servicio_calidad .fa-solid {
-  color: rgb(233, 123, 48);
+  color: rgb(233, 123, 49);
   padding: 1rem;
 }
 
@@ -662,6 +786,7 @@ main .background-image {
   height: 100%;
 }
 .nosotros .nosotros_texto {
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -685,15 +810,63 @@ main .background-image {
   justify-content: center;
 }
 
+.proyecto-title {
+  color: rgb(38, 39, 39);
+  font-size: 4rem;
+  margin: 3rem;
+  font-weight: 400;
+}
+
 /*Logo Whatsapp*/
 .wtp {
   position: fixed;
-  width: 6rem;
-  top: 92%;
-  left: 1%;
+  width: 5rem;
+  top: 91%;
+  left: 2rem;
   z-index: 100;
 }
 .wtp:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+
+.div-a-proyectos {
+  text-decoration: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.div-a-proyectos .nSP {
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+.div-a-proyectos .nSP .TitleP {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.principalNS {
+  border: solid 1px rgb(233, 123, 49);
+}
+
+.nSP {
+  margin: 0;
+  padding: 0;
+  border: solid 1px rgb(233, 123, 49);
+}
+
+.div-img-proyects {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.div-img-proyects .img-g {
+  width: 50rem;
+}
+.div-img-proyects .img-g2 {
+  width: 30rem;
 }/*# sourceMappingURL=app.css.map */

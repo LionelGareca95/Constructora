@@ -1,0 +1,38 @@
+.div-a-proyectos {
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    .nSP {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        .TitleP {
+            font-size: 3rem;
+            font-weight: $regular;
+        }
+    }
+}
+.principalNS{
+    border: solid 1px $naranja;
+}
+.nSP {
+    margin: 0;
+    padding: 0;
+    border: solid 1px $naranja;
+}
+
+.div-img-proyects {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    .img-g {
+        width: 50rem;
+    }
+    .img-g2 {
+        width: 30rem;
+    }
+}

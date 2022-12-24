@@ -32,10 +32,10 @@ nav {
 .enlaces-menu {
 	display: flex;
 	li {
-        padding-left: 3rem;
 		list-style-type: none;
 		transition: 0.3s;
 		a {
+			padding: 2rem;
 			text-decoration: none;
 			font-size: 1.8rem;
 			color: black;
@@ -48,6 +48,7 @@ nav {
 	}
 }
 .enlaces-menu.activado {
+	padding: 0;
 	display: flex;
 	animation: muestraMenu 350ms ease-in-out both;
 }
