@@ -3,12 +3,17 @@
     text-align: center;
     margin: 0;
     padding: 0;
+
+    
     .nSP {
         margin: 0;
         width: 100%;
         padding: 0;
+        &:hover {
+            background-color: $naranja;
+        }
         .TitleP {
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: $regular;
         }
     }
