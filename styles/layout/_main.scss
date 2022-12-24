@@ -44,6 +44,7 @@ main {
             }
             li {
                 font-size: 2rem;
+                list-style: none;
             }
             a {
                 display: flex;
@@ -99,7 +100,7 @@ main {
             height: 100%;
         }
         .nosotros_texto {
-            padding-top: 1rem;
+            padding: 1rem 0; 
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -127,8 +128,9 @@ main {
     }
     .proyecto-title{
         color: $gris;
-        font-size: 4rem;
+        font-size: 3.5rem;
         margin: 3rem;
+        text-align: center;
         font-weight: $regular;
     }
 

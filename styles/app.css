@@ -736,6 +736,7 @@ main .background-image {
 }
 .contenedor-servicios .servicios li {
   font-size: 2rem;
+  list-style: none;
 }
 .contenedor-servicios .servicios a {
   display: flex;
@@ -786,7 +787,7 @@ main .background-image {
   height: 100%;
 }
 .nosotros .nosotros_texto {
-  padding-top: 1rem;
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -812,8 +813,9 @@ main .background-image {
 
 .proyecto-title {
   color: rgb(38, 39, 39);
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin: 3rem;
+  text-align: center;
   font-weight: 400;
 }
 
